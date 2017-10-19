@@ -1,13 +1,6 @@
-VK.init({
-  apiId: 6226799
-});
-
-let cb = response =>{
-  if(response.session){
-    console.log('Авторизация прошл успешно');
-  } else{
-    console.log('ошибка авторизации')
-  }
-};
-
-VK.auth.login(cb);
+VK.init(function() { 
+  console.log('test');
+  VK.callMethod("showSettingbox", 8214);
+}, function() { 
+  throw new Error('Ошибка');
+}, '5.68'); 
