@@ -1,1 +1,0 @@
-# vital2207.github.io
