@@ -1,14 +1,24 @@
 extends layout.pug
 block content
   .container
-    form(action="#" type="post")
-      h1.form__title Отправить новость
-      
-    a(href="test.html") перейти
-    h2 test 
-    h3 test
+    form(action="#" type="post" class="form__user")
+      .form-group
+       label(for="new-title") Заголовок новости
+       input(type="text" class="form-control" id="new-title" placeholder="Введите заголовок")
+      .form-group
+       label(for="category") Категория
+       input(type="text" class="form-control" id="new-title" placeholder="Введите заголовок")
+      .dropdown
+        button(class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown button
+        .dropdown-menu(aria-labelledby="dropdownMenuButton")
+          a(class="dropdown-item" href="#") Action
+          a(class="dropdown-item" href="#") Another action
+          a(class="dropdown-item" href="#") Something else here
 block scripts
   script(src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript")
+  script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")
   script(src="js/all.js" type="text/javascript")
-
+  
 

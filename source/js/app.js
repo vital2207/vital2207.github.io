@@ -1,5 +1,3 @@
-window.name = 'fXD';
-  
 window.onload = ()=>{
   VK.init(function() { 
     console.log('test');
